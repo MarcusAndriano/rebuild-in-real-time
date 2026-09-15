@@ -28,7 +28,7 @@ jobs:
         # Understat only — no browser. src/fetch.py exits non-zero if it wrote
         # nothing, so a silent no-op run shows up as a red build rather than as
         # a gap nobody notices until January.
-        run: python -m src.fetch weekly --season 2526
+        run: python -m src.fetch weekly --season 2627
 
       - name: Commit
         run: |

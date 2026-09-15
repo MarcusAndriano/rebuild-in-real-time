@@ -200,11 +200,11 @@ def main(argv: list[str] | None = None) -> int:
     p_hist.add_argument("--force", action="store_true")
 
     p_week = sub.add_parser("weekly", help="Understat pull (CI-safe)")
-    p_week.add_argument("--season", default="2526")
+    p_week.add_argument("--season", default="2627")
     p_week.add_argument("--force", action="store_true")
 
     p_snap = sub.add_parser("snapshot", help="week 1 frozen baseline")
-    p_snap.add_argument("--season", default="2526")
+    p_snap.add_argument("--season", default="2627")
     p_snap.add_argument("--force", action="store_true")
 
     args = parser.parse_args(argv)
