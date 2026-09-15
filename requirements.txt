@@ -1,0 +1,18 @@
+# Pinned deliberately. A study that runs for four months should not change
+# underneath itself halfway through.
+
+soccerdata==1.9.1
+pandas>=2.2
+pyarrow>=16        # parquet engine — pandas treats this as optional, we don't
+numpy>=1.26
+scikit-learn>=1.5
+scipy>=1.13
+matplotlib>=3.8
+statsmodels>=0.14
+
+# Bayesian updating (week 12). Conjugate updates need only scipy; arviz is for
+# the diagnostics and the trajectory plots.
+arviz>=0.18
+
+# Optional, week 17
+# streamlit>=1.37

@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.Python
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# soccerdata's own cache — NOT our committed cache under data/raw/
+soccerdata/
+.soccerdata/
+
+# Built artifacts — reproducible from data/raw/, so not committed
+data/db/*.sqlite
+data/db/*.db
+data/interim/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+
+# NOTE: data/raw/ IS committed on purpose. The whole point is that the
+# dataset survives a scraper breaking in December. Do not add it here.
